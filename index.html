@@ -8,11 +8,35 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <head>
+    <header>
         <h1>Control de Versiones</h1>
-    </head>
+    </header>
     <main>
-        <button>Dark Mode</button>
+        <section>
+            <button id="darkMode">Dark Mode</button>
+        </section>
+
+        <section>
+            <form action="/paginaNoExistente" id="form" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email">
+
+                <fieldset>
+                    <legend>Recibir notificaciones</legend>
+                    <label for="yes">Si</label>
+                    <input type="radio" name="subscribe" id="yes" value="y">
+                    <label for="no">No</label>
+                    <input type="radio" name="subscribe" id="no" value="n">
+                </fieldset>
+                
+                <!--button type="submit">Enviar</button-->
+                <!--Codigo comentado porque no hay base de datos para enviar la informacion-->
+                <input type="button" value="Enviar">
+            </form>
+        </section>
     </main>
     <script src="js/main.js"></script>
 </body>
