@@ -14,15 +14,21 @@ button.addEventListener("click", function() {
     if(isBlack) {
         document.body.style.backgroundColor = "black";
         text.style.color = "white";
-        form.style.color = "white";
+        //form.style.color = "white";
     }
 
     else {
         document.body.style.backgroundColor = "antiquewhite"
         text.style.color = "black"
-        form.style.color = "black";
+        //form.style.color = "black";
     }
     
     isBlack = !isBlack
 
 })
+
+/*
+A traves del DOM y empleando variables para asignar los elementos obtenidos
+se crea la funcionalidad del DarkMode, esto es posible cambiando el CSS
+a traves de los metodos JavaScript
+*/
